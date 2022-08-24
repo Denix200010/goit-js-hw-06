@@ -1,0 +1,24 @@
+.list__link{
+    text-decoration: none;
+}
+.list__item:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.gallery{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
