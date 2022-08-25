@@ -6,7 +6,9 @@ const submitBtnRef = formRef.querySelector('button[type="submit"]');
 
 formRef.addEventListener('submit', (event) => {
     event.preventDefault();
-    if (inputPassRef.value === "" || inputLoginRef.value === "") {
+    const { elements: { email, password } } = event.currentTarget;
+
+    if (email.value === "" || password.value === "") {
         return alert('Все поля должны быть заполнены!');
     } 
 
