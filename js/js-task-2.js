@@ -10,9 +10,9 @@ const ingredients = [
 const listRef = document.querySelector('#ingredients');
 const elements = [];
 const element = ingredients.forEach(ingredient => {
-    const itemRef = document.createElement('li');
-    itemRef.classList.add('item');
+  const itemRef = document.createElement('li');
+  itemRef.classList.add('item');
   itemRef.innerHTML = ingredient;
   elements.push(itemRef);
-})
-listRef.append(...elements)
+});
+listRef.append(...elements);
