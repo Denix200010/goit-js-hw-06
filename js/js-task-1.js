@@ -1,7 +1,5 @@
 const elementsRef = document.querySelectorAll('.item');
-
-const titleRef = document.querySelectorAll('.item > h2');
-console.log('Number of categories: ', titleRef.length);
+console.log('Number of categories: ', elementsRef.length);
 
 const items = elementsRef.forEach(item => {
     const categories = item.firstElementChild.textContent;

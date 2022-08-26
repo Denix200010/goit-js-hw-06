@@ -14,5 +14,5 @@ const element = ingredients.forEach(ingredient => {
   itemRef.classList.add('item');
   itemRef.innerHTML = ingredient;
   elements.push(itemRef);
-});
+});    
 listRef.append(...elements);
